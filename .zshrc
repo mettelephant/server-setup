@@ -153,6 +153,7 @@ alias myip="wget -qO- https://wtfismyip.com/text"	# quickly show external ip add
 alias l="ls -lah"
 alias x="exit"
 alias k="k -h"						# show human readable filesizes, in kb, mb etc
+alias ka="k -ha"						# show human readable filesizes, in kb, mb etc
 
 
 # CUSTOM FUNCTIONS
@@ -172,14 +173,6 @@ cheat() {
 # Matrix screen saver! will run if you have installed "cmatrix"
 # TMOUT=900
 # TRAPALRM() { if command -v cmatrix &> /dev/null; then cmatrix -sb; fi }
-
-speedtest() {
-    curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -
-}
-
-dadjoke() {
-    curl https://icanhazdadjoke.com
-}
 
 # Find dictionary definition
 dict() {
